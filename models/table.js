@@ -4,12 +4,8 @@ var Schema = mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    tableId: Number,
-    totalPrice: Number,
-    cart: [{
-        productId: String,
-        nuitPrice: Number,
-        quantity: Number
-    }]
+    name: String,
+    // totalPrice: Number,
+    ordinal: Number
 });
 export default mongoose.model('Table', Schema);
